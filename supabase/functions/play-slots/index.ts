@@ -94,7 +94,7 @@ function checkWinnings(reels: string[][], paylines: number[][], payouts: any): {
     }
   }
   
-  return { winnings, winningLines };
+  return { winnings: totalWinnings, winningLines };
 }
 
 Deno.serve(async (req: Request) => {
